@@ -19,12 +19,7 @@ const insertIntoDB = catchAsync(async (req: Request, res: Response) => {
 const getAllFromDB = catchAsync(async (req: Request, res: Response) => {
   console.log(req.query);
   const options = pick(req.query, ['page', 'limit', 'sortBy', 'sortOrder']);
-  const filters = pick(req.query, [
-    'searchTerm',
-    'code',
-    'startMonth',
-    'endMonth',
-  ]);
+  const filters = pick(req.query, ['searchTerm', 'title']);
 
   const result = await academicDepartmentService.getAllFromDB(options, filters);
   sendResponse<AcademicDepartment[]>(res, {

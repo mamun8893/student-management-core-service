@@ -12,5 +12,11 @@ router.post(
 );
 router.get('/', studentController.getAllFromDB);
 router.get('/:id', studentController.getDataById);
+router.patch(
+  '/:id',
+  validateRequest(studentValidation.update),
+  studentController.updateIntoDB
+);
+router.delete('/:id', studentController.deleteFromDB);
 
 export const studentRoutes = router;

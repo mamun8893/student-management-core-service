@@ -28,7 +28,7 @@ const getAllFromDB = async (
   //Search Term
   if (searchTerm) {
     andConditions.push({
-      OR: ['title', 'code', 'startMonth', 'endMonth'].map(field => {
+      OR: ['firstName', 'lastName', 'email', 'phone'].map(field => {
         return {
           [field]: {
             contains: searchTerm,
@@ -99,8 +99,42 @@ const getDataById = async (id: string): Promise<Student | null> => {
   return result;
 };
 
+const updateIntoDB = async (
+  id: string,
+  data: Partial<Student>
+): Promise<Student> => {
+  const result = await prisma.student.update({
+    where: {
+      id,
+    },
+    data,
+    include: {
+      academicDepartment: true,
+      academicSemester: true,
+      academicFaculty: true,
+    },
+  });
+  return result;
+};
+
+const deleteFromDB = async (id: string): Promise<Student> => {
+  const result = await prisma.student.delete({
+    where: {
+      id,
+    },
+    include: {
+      academicDepartment: true,
+      academicSemester: true,
+      academicFaculty: true,
+    },
+  });
+  return result;
+};
+
 export const studentService = {
   insertIntoDB,
   getAllFromDB,
   getDataById,
+  updateIntoDB,
+  deleteFromDB,
 };

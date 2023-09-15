@@ -27,7 +27,7 @@ const getAllFromDB = async (
   //Search Term
   if (searchTerm) {
     andConditions.push({
-      OR: ['title', 'code', 'startMonth', 'endMonth'].map(field => {
+      OR: ['firstName', 'lastName', 'email', 'phone'].map(field => {
         return {
           [field]: {
             contains: searchTerm,

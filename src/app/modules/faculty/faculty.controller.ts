@@ -20,9 +20,10 @@ const getAllFromDB = catchAsync(async (req: Request, res: Response) => {
   const options = pick(req.query, ['page', 'limit', 'sortBy', 'sortOrder']);
   const filters = pick(req.query, [
     'searchTerm',
-    'code',
-    'startMonth',
-    'endMonth',
+    'firstName',
+    'lastName',
+    'email',
+    'phone',
   ]);
 
   const result = await facultyService.getAllFromDB(options, filters);

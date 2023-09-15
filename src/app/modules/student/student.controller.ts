@@ -20,9 +20,10 @@ const getAllFromDB = catchAsync(async (req: Request, res: Response) => {
   const options = pick(req.query, ['page', 'limit', 'sortBy', 'sortOrder']);
   const filters = pick(req.query, [
     'searchTerm',
-    'code',
-    'startMonth',
-    'endMonth',
+    'firstName',
+    'lastName',
+    'email',
+    'phone',
   ]);
 
   const result = await studentService.getAllFromDB(options, filters);
@@ -45,8 +46,30 @@ const getDataById = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+const updateIntoDB = catchAsync(async (req: Request, res: Response) => {
+  const result = await studentService.updateIntoDB(req.params.id, req.body);
+  sendResponse<Student>(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Student Updated Successfully',
+    data: result,
+  });
+});
+
+const deleteFromDB = catchAsync(async (req: Request, res: Response) => {
+  const result = await studentService.deleteFromDB(req.params.id);
+  sendResponse<Student>(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Student Deleted Successfully',
+    data: result,
+  });
+});
+
 export const studentController = {
   insertIntoDB,
   getAllFromDB,
   getDataById,
+  updateIntoDB,
+  deleteFromDB,
 };
