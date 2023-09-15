@@ -1,0 +1,45 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "F:\\2023\\Next Level Web Development\\Mission6-core-service\\logs\\winston\\errors\\.267202280d08e6c4b6f6a7d73fab9a59bb77a140-audit.json",
+    "files": [
+        {
+            "date": 1694542910935,
+            "name": "F:\\2023\\Next Level Web Development\\Mission6-core-service\\logs\\winston\\errors\\phu-2023-13-09-00-error.log",
+            "hash": "e942739e1ea6a432c1737a54831c593a71b5064fcb09d3af0aadb3a32023015b"
+        },
+        {
+            "date": 1694621837559,
+            "name": "F:\\2023\\Next Level Web Development\\Mission6-core-service\\logs\\winston\\errors\\phu-2023-13-09-22-error.log",
+            "hash": "c7444c9c3932b401117a29758985abb8660f8de90798b736e625845779b5b0e5"
+        },
+        {
+            "date": 1694624594237,
+            "name": "F:\\2023\\Next Level Web Development\\Mission6-core-service\\logs\\winston\\errors\\phu-2023-13-09-23-error.log",
+            "hash": "c0fb5bda9cdcb98fae2b50955ea6512e2a5d2e6f4e117224661e2f9f979576fb"
+        },
+        {
+            "date": 1694702712277,
+            "name": "F:\\2023\\Next Level Web Development\\Mission6-core-service\\logs\\winston\\errors\\phu-2023-14-09-20-error.log",
+            "hash": "23d2ad7459a65c4eb69e8ad14adc2c0b6bc37d29ea335feed84d5c47feea77c2"
+        },
+        {
+            "date": 1694711744398,
+            "name": "F:\\2023\\Next Level Web Development\\Mission6-core-service\\logs\\winston\\errors\\phu-2023-14-09-23-error.log",
+            "hash": "d6e26782671c497b48eeb778819d40b03d80c1bd8ff4e4c2e6de54b8ff46da5e"
+        },
+        {
+            "date": 1694717308198,
+            "name": "F:\\2023\\Next Level Web Development\\Mission6-core-service\\logs\\winston\\errors\\phu-2023-15-09-00-error.log",
+            "hash": "c8a417505e45d257ba91f67c639e51089cc9e77a8071f8fe2c121be121cc6471"
+        },
+        {
+            "date": 1694718000686,
+            "name": "F:\\2023\\Next Level Web Development\\Mission6-core-service\\logs\\winston\\errors\\phu-2023-15-09-01-error.log",
+            "hash": "88c75617ce8b4cbd9fef3af990050e9ca113bb1fe61dae3699ba5da4de2b8e94"
+        }
+    ],
+    "hashType": "sha256"
+}

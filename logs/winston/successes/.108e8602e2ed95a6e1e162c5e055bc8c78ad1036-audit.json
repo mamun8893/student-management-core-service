@@ -1,0 +1,45 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "F:\\2023\\Next Level Web Development\\Mission6-core-service\\logs\\winston\\successes\\.108e8602e2ed95a6e1e162c5e055bc8c78ad1036-audit.json",
+    "files": [
+        {
+            "date": 1694542910907,
+            "name": "F:\\2023\\Next Level Web Development\\Mission6-core-service\\logs\\winston\\successes\\phu-2023-13-09-00-success.log",
+            "hash": "b250bfe93762a5c4e47ddf2859630cb71144eb00e9b600880fb126dc0407447f"
+        },
+        {
+            "date": 1694621837475,
+            "name": "F:\\2023\\Next Level Web Development\\Mission6-core-service\\logs\\winston\\successes\\phu-2023-13-09-22-success.log",
+            "hash": "badd614118b0220496a7204c90f5885a05cb423b3bb9914f6a84ca64251626d7"
+        },
+        {
+            "date": 1694624594167,
+            "name": "F:\\2023\\Next Level Web Development\\Mission6-core-service\\logs\\winston\\successes\\phu-2023-13-09-23-success.log",
+            "hash": "4c7ea1c854d74e526de776408fb6e3b3c059fcd32f6efc054ecf1744075bc6e7"
+        },
+        {
+            "date": 1694702712195,
+            "name": "F:\\2023\\Next Level Web Development\\Mission6-core-service\\logs\\winston\\successes\\phu-2023-14-09-20-success.log",
+            "hash": "603ea4cae14dc34143593e5b7234270ff023d4dc826e325ac8811a15aa0005f2"
+        },
+        {
+            "date": 1694711744367,
+            "name": "F:\\2023\\Next Level Web Development\\Mission6-core-service\\logs\\winston\\successes\\phu-2023-14-09-23-success.log",
+            "hash": "9cc22343638b17d70fd7e571683c3905076f290a78b7c25336eac209c1444311"
+        },
+        {
+            "date": 1694717308156,
+            "name": "F:\\2023\\Next Level Web Development\\Mission6-core-service\\logs\\winston\\successes\\phu-2023-15-09-00-success.log",
+            "hash": "34ed3ec6578a57b9c056a87a42bf24de2f9498debd52e9b19e7fb178ce148389"
+        },
+        {
+            "date": 1694718000673,
+            "name": "F:\\2023\\Next Level Web Development\\Mission6-core-service\\logs\\winston\\successes\\phu-2023-15-09-01-success.log",
+            "hash": "56e1c61934cd39a9eb8e143b23cb76bcaf0fd8dd387aef6194781f1628f8cc55"
+        }
+    ],
+    "hashType": "sha256"
+}
